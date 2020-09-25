@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+   
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'djf4kav',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+</head>
+<body>
+
+    <div class="header-btn">
+        <div class="bar bar1"></div>
+        <div class=" bar bar2 "></div>
+        <div class="bar bar3"></div>
+    </div>
+    <header class="header">
+        <ul>
+            <li class="scroll-btn" href="#top">Top</li>
+            <li class="scroll-btn" href="#about">About</li>
+            <li class="scroll-btn" href="#skills">Skills</li>
+            <li class="scroll-btn" href="#works">Works</li>
+            <li class="scroll-btn" href="#contact">Contact</li>
+        </ul>
+
+    </header>
+
+
+    <div class="main">
+        <div class="top-wrapper" id="top">
+            <div class="top-content">
+                <h1>K<span style="color:#c16301;">O</span>U YO<span style="color:#c16301;">S</span>HDA</h1>
+                <!-- <p>Design/Engineer</p> -->
+                <p>portfoliosite</p>
+
+            </div>
+
+
+           
+        </div>
+
+        <div class="about" id="about">
+            <h1>About</h1>
+            <div class="about-content">
+                <div class="about-card">
+
+                    <img src="image/about-pic.png">
+                    <div class="about-text">
+                        <p>吉田　航</p>
+                        <p>2000年２月８日生まれ</p>
+                        <p>早稲田大学教育学部に所属しています。</p>
+                        <p>個人的に学習し、webサイトやwebアプリケーションを作成する事ができます。<br>よろしくお願いいたします。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills" id="skills">
+            <h1>Skills</h1>
+            <div class="skills-content">
+                <div class="skill">
+                    <div class="skill-content">
+                        <i class="fas fa-code"></i>
+                        <h2>html/css</h2>
+                        <p>html、cssを使用し、デザインに忠実なコーディングが可能です。</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-content">
+
+                        <i class="fab fa-js"></i>
+                        <h2>javascript</h2>
+                        <p>html,cssで作成した静的なwebサイトに動きをつける事ができます。</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-content">
+
+                        <i class="fab fa-wordpress-simple"></i>
+                        <h2>wordpress</h2>
+                        <p>wordpressを使用したサイトの作成、カスタマイズが可能です。</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-content">
+
+                        <i class="fab fa-php"></i>
+                        <h2>php(Laravel)</h2>
+                        <p>phpを使用し、アプリケーションの作成が可能です。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="works" id="works">
+            <h1>Works</h1>
+            <div class="works-content">
+                <div class="work">
+                    <img src="image/mysite1-top.png">
+                    <div class="work-detail">
+                        <h2>work1</h2>
+                        <p>mysite/2020</p>
+                        <p>仮想プログラミングスクール用のサイトを作成したものです。デザインから作成しました.</p>
+                        <a href="image/mysite1.png" data-lightbox="fuga" data-title="hoge">
+                            <h4>全体をみる</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="work reverse">
+                    <div class="work-detail">
+                        <h2>work2</h2>
+                        <p>plactice/2019</p>
+                        <p>isara様のサイトの模写をさせていただいたものです。html,css,jqueryを使用し、動きのついたサイトになっています。
+                        　　</p>
+                        <a href="image/isara1.png" data-lightbox="fuga" data-title="hoge">
+                            <h4>全体をみる</h4>
+                        </a>
+                    </div>
+                    <img src="image/isara-top.png">
+                </div>
+                <div class="work">
+                    <img src="image/gashi-top.png">
+                    <div class="work-detail">
+                        <h2>work3</h2>
+                        <p>plactice/2019</p>
+                        <p>松風屋様のサイトを模写させて頂いたものです。html,css,jqueryを使用し、動きのついたサイトになっています。
+                        　　</p>
+                        <a href="image/gashi1.png" data-lightbox="fuga" data-title="hoge">
+                            <h4>全体をみる</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="work reverse">
+                    <div class="work-detail">
+                        <h2>work4</h2>
+                        <p>app/2020</p>
+                        <p>php(Laravel)で作成したtwitterクローンのアプリケーションです。bootstrapを使用して作成しました。
+                        　　</p>
+                        <a href="https://product-twitter-clane.herokuapp.com/" target="_blank">
+                            <h4>アプリをみる</h4>
+                        </a>
+                    </div>
+                    <img src="image/twitterclone.png">
+                </div>
+                <div class="work">
+                    <img src="image/animation.png">
+                    <div class="work-detail">
+                        <h2>work5</h2>
+                        <p>animation/2020</p>
+                        <p>adobe animate cc を使用したアニメーションをHTML上に表示したものです。
+                        　　</p>
+                        <a href="https://kouspro.com/product-animation/comp.html" target="_blank">
+                            <h4>サイトをみる</h4>
+                        </a>
+                    </div>
+                </div>
+
+         
+                
+            </div>
+        </div>
+
+
+        <div class="contact" id="contact">
+
+            <h1>Contact</h1>
+            <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSc24thkevaw0TIEX80ViFAhKLAXELGZ77BZQ_LbEs6tVKHa4A/formResponse" target="_blank">
+                <div class="form-content">
+
+                    <label for="form-name">お名前</label>
+                    <input id="form-name" type="text" name="entry.2005620554" placeholder="名前" required="">
+                </div>
+                <div class="form-content">
+
+                    
+                    <label for="form-mail">メールアドレス</label>
+                    <input id="form-mail" type="email" name="entry.1045781291" placeholder="example@mail.co.jp" required="">
+                </div>
+
+                <div class="form-content">
+
+                    <label for="form-number">電話</label>
+                    <input id="form-number" type="number" name="entry.1166974658" placeholder="000-0000-0000" required="">
+                </div>
+                <div class="form-content">
+
+                    <label for="form-detail">お問い合わせ詳細</label>
+                    <textarea id="form-detail" name="entry.839337160" placeholder="ご自由にご記載下さい。" required=""></textarea>
+                </div>
+               
+                <div >
+
+                    <button id="form-btn" type="submit" name="button" value="送信する">送信する</button>
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+    </div>
+ 
+    
+
+
+
+    
+
+
+   
+</body>
+</html>
