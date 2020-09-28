@@ -57,8 +57,30 @@ $(function(){
         $('.titleicon3').addClass('iconanimation3');
     }
 })
-   
 
+
+
+      var beforeBg = '';
+      $(window).on('load scroll touchmove', function() {
+          $scrollTop = $(window).scrollTop();
+          // 画像を切り替える位置
+          $changePoint = $('.about').offset().top ;
+          if($scrollTop < $changePoint){
+            // 同じ背景画像への切替を行わないように判定
+            if(beforeBg !== 'bgA'){
+              // 新しい画像へ切替
+              $('.top-wrapper').removeClass('bgB');
+              $('.top-wrapper').addClass('bgA');
+              beforeBg = 'bgA';
+            }
+          } else {
+            if(beforeBg !== 'bgB'){
+              $('.top-wrapper').removeClass('bgA');
+              $('.top-wrapper').addClass('bgB');
+              beforeBg = 'bgB';
+            }
+          }
+      });
 
 
 
