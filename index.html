@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <!-- フォント読み込み -->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'djf4kav',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +25,7 @@
    
     <script src="js/lightbox.min.js"></script>
     <script src="js/main.js"></script>
+
     
 </head>
 <body>
@@ -110,7 +122,7 @@
                         <p>app/2020</p>
                         <p>php(Laravel)で作成した釣りスポット共有アプリケーションです。GoogleMAP APIを利用し、入力した位置情報がマップ上に表示される機能を追加しました。フロント部分は主にbootstrapを使用して作成しました。
                         　　</p>
-                        <a href="https://product-twitter-clane.herokuapp.com/" target="_blank">
+                        <a href="https://fishinglocation.herokuapp.com/" target="_blank">
                             <h4>アプリをみる</h4>
                         </a>
                     </div>
@@ -164,6 +176,19 @@
                         </a>
                     </div>
                     <img src="image/animation.png">
+                </div>
+
+                <div class="work ">
+                    <img src="image/qr.png">
+                    <div class="work-detail">
+                        <h2>work6</h2>
+                        <p>plactice/2020</p>
+                        <p>gasとlineapiを使用し、現在家にあるストックを管理することのできるボットを作成しました。最低限の機能は実装しています。現在もアップデート中です。
+                        　　</p>
+                        <a href="image/linebot.png" data-lightbox="fuga" data-title="hoge">
+                            <h4>全体をみる</h4>
+                        </a>
+                    </div>
                 </div>
 
          
